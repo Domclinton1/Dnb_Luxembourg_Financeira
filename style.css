@@ -634,3 +634,80 @@ form :not(h2, .simule-ja) {
     font-weight: bold;
 }
 
+.security {
+    
+    border-radius: 5px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    color: #1d1d1d;
+}
+
+.security-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.security-01 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.security-01 h1 {
+    color: rgb(9, 9, 75);
+    font-size: 45px;
+}
+.security-01 p {
+    color: rgb(9, 9, 75);
+}
+.security-3 {
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    color: #fff;
+    align-items: center;
+}
+.security-3 h1 {
+    font-size: 40px;
+}
+.vantagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1rem;
+
+}
+.vantagens img {
+    width: 100px;
+    
+}
+.vantagem-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.security .simule-ja {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
