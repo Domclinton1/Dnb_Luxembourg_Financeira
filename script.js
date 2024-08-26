@@ -39,3 +39,15 @@ document.querySelector('.ler-mais').addEventListener('click', function() {
         this.textContent = 'Ler Mais';
     }
 });
+
+
+document.querySelector('.ler-mais-2').addEventListener('click', function() {
+    const conteudo = document.querySelector('.duvida-conteudo');
+    conteudo.classList.toggle('hidden');
+    
+    if (conteudo.classList.contains('hidden')) {
+        this.textContent = 'Ler Mais';
+    } else {
+        this.textContent = 'Ler Menos';
+    }
+});

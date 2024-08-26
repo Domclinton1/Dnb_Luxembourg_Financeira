@@ -748,6 +748,7 @@ form :not(h2, .simule-ja) {
     gap: 48px;
     background-color: #fff;
     color: #06121e;
+    padding: 40px;
 }
 #testimonials .section-subtitle {
     font-size: 2.5rem;
@@ -805,4 +806,49 @@ form :not(h2, .simule-ja) {
 .rate {
     display: flex;
     justify-content: flex-end;
+}
+.duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px;
+
+}
+.duvida {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.duvida-title-2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10rem;
+    margin: 10px 0;
+    color: #fd7e14;
+}
+.duvida-title-2 h2 {
+    font-size: 18px;
+}
+.duvida-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    line-height: 1.5;
+    color: gray;
+    font-size: 15px;
+}
+.hidden {
+    display: none;
+}
+.ler-mais-2 {
+    color: #fd7e14;
+    font-size: 15px;
+    cursor: pointer;
 }
