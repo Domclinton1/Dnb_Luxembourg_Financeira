@@ -807,48 +807,49 @@ form :not(h2, .simule-ja) {
     display: flex;
     justify-content: flex-end;
 }
-.duvidas {
+.bank-price-action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    padding: 40px;
-
 }
-.duvida {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 40px;
+.bank-price-action div {
     width: 70%;
     display: flex;
-    flex-direction: column;
-    
-}
-.duvida-title-2 {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    gap: 10rem;
-    margin: 10px 0;
-    color: #fd7e14;
 }
-.duvida-title-2 h2 {
-    font-size: 18px;
-}
-.duvida-conteudo {
+footer {
+    background-color: #06121e;
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    line-height: 1.5;
-    color: gray;
-    font-size: 15px;
+    flex-wrap: wrap;
 }
-.hidden {
-    display: none;
+.foot-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 40px;
 }
-.ler-mais-2 {
-    color: #fd7e14;
-    font-size: 15px;
-    cursor: pointer;
+.foot-contato {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+    width: 50%;
+}
+.foot-contato li {
+    color: #fff;
+    list-style: none;
+    gap: 1.8rem;
+    display: flex;  
+    line-height: 2; 
+}
+.foot-contato li:nth-child(1) {
+    width: 70%;
+    line-height: 1.2;
+}
+.foot-contato img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%);
 }
