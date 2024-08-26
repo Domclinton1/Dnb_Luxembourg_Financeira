@@ -711,3 +711,31 @@ form :not(h2, .simule-ja) {
     align-items: center;
     text-align: center;
 }
+.security-img img {
+    width: 70%;
+}
+.security-01 ul {
+    list-style: none;
+}
+.security-01 li {
+    display: flex;
+    gap: 2rem;
+    line-height: 1.5;
+    color: rgb(9, 9, 75);
+}
+.security-01 li img {
+    filter: invert(63%) sepia(97%) saturate(1084%) hue-rotate(333deg) brightness(101%) contrast(102%);
+}
+.security-img h1 {
+    color: rgb(9, 9, 75);
+    font-size: 40px;
+}
+.second-img {
+    width: 55%;
+}
+.security-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
