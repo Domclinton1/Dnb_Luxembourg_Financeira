@@ -822,7 +822,14 @@ footer {
     background-color: #06121e;
     color: #fff;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+.footer-infos {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
 }
 .foot-info {
     width: 50%;
@@ -842,14 +849,58 @@ footer {
 .foot-contato li {
     color: #fff;
     list-style: none;
-    gap: 1.8rem;
+    gap: 2rem;
     display: flex;  
     line-height: 2; 
 }
 .foot-contato li:nth-child(1) {
-    width: 70%;
-    line-height: 1.2;
+    width: 100%;
+    
+}
+.foot-contato li:nth-child(2) {
+    width: 100%;
+    
 }
 .foot-contato img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%);
+}
+.footer-credits {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+
+}
+.footer-credits img {
+    width: 60px;
+}
+.footer-credits p {
+    width: 72%;
+    text-align: justify;
+}
+
+.footer-credits h4 {
+    display: flex;
+    text-align: justify;
+    line-height: 2.5;
+}
+.footer-atendimento, .footer-ajuda {
+    width: 100%;
+
+}
+.foot-contato, .foot-info {
+    width: 50%;
+}
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.end img {
+    width: 50px;
 }
