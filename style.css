@@ -921,6 +921,19 @@ footer {
 .simulador {
     max-width: 500px;
     width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.text-simulador {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bancos-simulador img {
+    width: 100%;
 }
 .bank-oferta {
     display: flex;
@@ -934,9 +947,14 @@ footer {
     max-width: 500px;
     width: 100%;
 }
-.bank-price {
+.bank-infos ul {
+    display: none;
+}
+.bank-price ul {
     display: flex;
-    flex-direction: column;
+    
+    max-width: 500px;
+    width: 100%;
 
 }
 .bank-details {
