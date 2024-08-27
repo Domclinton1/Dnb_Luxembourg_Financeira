@@ -1,3 +1,27 @@
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+
+    // Parâmetros do template de e-mail
+    const templateParams = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        celular: document.getElementById('celular').value,
+        valor: document.getElementById('valor').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    // Envia o e-mail usando EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    .then(function(response) {
+        console.log('E-mail enviado com sucesso!', response.status, response.text);
+        alert('Mensagem enviada com sucesso!');
+    }, function(error) {
+        console.log('Falha ao enviar o e-mail.', error);
+        alert('Falha ao enviar a mensagem.');
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const toggleDetails = document.querySelectorAll(".toggle-details");
 
