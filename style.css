@@ -890,7 +890,278 @@ footer {
 }
 
 /* Começo dos media queries */
+@media screen and (max-width: 430px) {
 
+    .heros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .hello {
+        max-width: 430px;
+        width: 100%;
+        justify-content: center;
+        padding: 5px;
+    }
+    .headder {
+        max-width: 430px;
+        width: 100%;
+    }
+    
+    .nav {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav .ul-1 {
+        display: none;
+    }
+    
+    .heros {
+        max-width: 430px;
+        width: 100%;
+    }
+    .hero {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hero-text {
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hero-list li {
+        width: 100%;
+    }
+    .simulador {
+        max-width: 430px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-simulador {
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bancos-simulador img {
+        width: 100%;
+    }
+    .ofertas {
+        max-width: 430px;
+        width: 100%;
+        justify-content: center;
+    }
+    .bank-oferta {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .bank-infos {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .bank-infos ul {
+        display: none;
+    }
+    .bank-price ul {
+        display: flex;
+        
+        max-width: 430px;
+        width: 100%;
+    
+    }
+    .bank-details {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: 
+        center;
+        padding: 40px;
+    }
+    .bank-footer {
+        display: flex;
+        align-items: center ;
+        max-width: 430px;
+        width: 100%;
+    }
+    
+    .detalhe-flex {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .detalhe-1{
+        display: flex;
+        max-width: 350px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .detalhe-01 {
+        display: flex;
+        width: 100%;
+    }
+    
+    .detalhe-2, .detalhe-2 li {
+        width: 100%;
+        height: 100%;
+        max-width: 430px;
+    }
+    
+    .detalhe-3 {
+        width: 100%;
+        height: 100%;
+        max-width: 430px;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        
+    }
+    .detalhes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 430px;
+    }
+    .services {
+        max-width: 430px;
+        width: 100%;
+    }
+    .questions {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .quests {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .quest {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .informations {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .simulations{
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+    }
+    .emprestimos {
+        display: flex;
+        flex-direction: column;
+    } 
+    .emprestimos-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .emprestimos-3 {
+        width: 100%;
+    }
+    .emprestimos-lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .security-03 .vantagem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 430px;
+    }
+    .vantagens {
+        width: 100%;
+    }
+    .security .simule-ja {
+        width: 100%;
+     } 
+     .security .shield img {
+        width: 350px;
+     }
+     .security .graphic img {
+        width: 350px;
+     }
+     .security .security-img img {
+        width: 350px;
+     }  
+     .security-2 .second-img img {
+        width: 350px;
+     }
+     .security {
+        max-width: 430px;
+        width: 100%;
+        font-size: 20px;
+     } 
+     .security-2 {
+        display: block;
+        max-width: 430px;
+        width: 100%;
+     }
+     .security-01 {
+        width: 100%;
+        max-width: 430px;
+     }
+     .testimonials {
+        max-width: 430px;
+        width: 100%;
+      }
+      footer {
+        max-width: 430px;
+        width: 100%;
+      }  
+      .footer-infos {
+        display: block;
+        width: 100%;
+      }
+      .foot-info {
+        width: 100%;
+      }
+      .footer-credits {
+        display: block;
+        width: 100%;
+      }
+      .footer-credits p {
+        width: 100%;
+      }
+      .foot-contato {
+        width: 100%;
+      }
+      .end {
+        max-width: 430px;
+        width: 100%
+      }
+    }
 @media screen and (max-width: 500px) {
 
 .heros {
@@ -904,7 +1175,7 @@ footer {
 .hello {
     max-width: 500px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 5px;
 }
 .headder {
@@ -992,6 +1263,16 @@ footer {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
+    align-items: center;
+    justify-content: 
+    center;
+    padding: 40px;
+}
+.bank-footer {
+    display: flex;
+    align-items: center ;
+    max-width: 500px;
+    width: 100%;
 }
 
 .detalhe-flex {
@@ -1023,11 +1304,18 @@ footer {
     width: 100%;
     height: 100%;
     max-width: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
     
 }
 .detalhes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
 }
 .services {
     max-width: 500px;
