@@ -412,6 +412,9 @@ form :not(h2, .simule-ja) {
     text-align: center;
     align-items: center;
 }
+.detalhe-2 li img {
+    filter: invert(63%) sepia(97%) saturate(1084%) hue-rotate(333deg) brightness(101%) contrast(102%);
+}
 
 .detalhe-3 {
     width: 40%;
@@ -967,13 +970,17 @@ footer {
     .bank-oferta {
         display: flex;
         flex-direction: column;
-        max-width: 430px;
+        max-width: 400px;
         width: 100%;
+    }
+    .bank-price-action {
+        display: flex;
+        text-align: center;
     }
     .bank-infos {
         display: flex;
         flex-direction: column;
-        max-width: 430px;
+        max-width: 400px;
         width: 100%;
     }
     .bank-infos ul {
@@ -981,61 +988,90 @@ footer {
     }
     .bank-price ul {
         display: flex;
-        
-        max-width: 430px;
+        max-width: 400px;
         width: 100%;
     
+    }
+    .bank-price {
+        display: flex;
+        flex-direction: column;
     }
     .bank-details {
         display: flex;
         flex-direction: column;
-        max-width: 430px;
+        max-width: 300px;
         width: 100%;
         align-items: center;
         justify-content: 
         center;
-        padding: 40px;
+       
     }
     .bank-footer {
         display: flex;
         align-items: center ;
-        max-width: 430px;
+        max-width: 400px;
         width: 100%;
     }
     
     .detalhe-flex {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
+        align-items: center;
     }
     .detalhe-1{
         display: flex;
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         justify-content: center;
         align-items: center;
+        flex-direction: column ;
+        gap: 35px;
     }
     .detalhe-01 {
         display: flex;
         width: 100%;
+        justify-content: center;
+    }
+
+    .detalhe-2 {
+        max-width: 300px;
+        width: 100%;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2;
+
+    }
+
+    .detalhe-2 li {
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
     }
     
-    .detalhe-2, .detalhe-2 li {
+    /*.detalhe-2, .detalhe-2 li {
         width: 100%;
         height: 100%;
-        max-width: 430px;
-    }
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        
+    }*/
     
     .detalhe-3 {
         width: 100%;
         height: 100%;
-        max-width: 430px;
+        max-width: 300px;
         display: flex;
-        justify-content: center;
-        padding: 40px;
-        
+        justify-content: center;        
+    }
+    .detalhe-3 span {
+        text-align: end;
     }
     .detalhes {
         display: flex;
@@ -1043,7 +1079,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 430px;
+        max-width: 400px;
     }
     .services {
         max-width: 430px;

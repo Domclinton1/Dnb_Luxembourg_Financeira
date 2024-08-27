@@ -378,3 +378,31 @@
     width: 100%
   }
 }
+
+
+
+
+
+
+
+<div class="detalhe-flex">
+                            <div class="detalhe-2">
+                                <ul>
+                                    <li><img src="./assets/icons/check-square-fill.svg" alt="">Permite Assinatura Digital</li>
+                                    <li><img src="./assets/icons/check-square-fill.svg" alt="">Soluções de Crédito Consolidado</li>
+                                    <li><img src="./assets/icons/check-square-fill.svg" alt="">Taxas e Mensalidades Fixas</li>
+                                    <li><img src="./assets/icons/check-square-fill.svg" alt="">Várias Finalidades</li>
+                                </ul>
+                            </div>
+                            <div class="detalhe-3">
+                                <ul>
+                                    <li><p>Desde</p> <span>2015</span></li>
+                                    <li><p>Montantes de Financiamento</p><span>30,000€ - 900,000€</span></li>
+                                    <li><p>Prazos de Pagamento</p><span>12 - 360 Meses</span></li>
+                                    <li><p>Tempo de Aprovação</p><span>24 Horas Úteis</span></li>
+                                    <li><p>TAN</p><span>Desde 1,88%</span></li>
+                                    <li><p>TAEG</p><span>Desde 2,65%</span></li>
+                                    <li><p>Assinatura Digital</p><span>Sim</span></li>
+                                </ul>
+                            </div>
+                        </div>
