@@ -61,6 +61,69 @@ body {
     justify-content: center;
     width: 100%;
 }
+#faleConosco {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+#faleConosco span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#faleConosco span::after {
+    content: "▼";
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#contatoOpcoes {
+    position: absolute;
+    top: 100%; /* Elimina a margem extra */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    z-index: 10;
+    
+}
+
+#contatoOpcoes li {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatoOpcoes li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    gap: 1rem;
+}
+
+#contatoOpcoes li a span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#contatoOpcoes li a small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+
+
 
 .heros {
     background-image: url(./assets/banners/Luxembourg-2jpg.jpg);

@@ -43,7 +43,17 @@ $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
 
 */ 
 
-
+document.getElementById("faleConosco").addEventListener("click", function() {
+    var contatoOpcoes = document.getElementById("contatoOpcoes");
+    if (contatoOpcoes.style.display === "none" || contatoOpcoes.style.display === "") {
+      contatoOpcoes.style.display = "block";
+    } else {
+      contatoOpcoes.style.display = "none";
+    }
+  });
+  
+  
+  
 
 document.addEventListener("DOMContentLoaded", function() {
     const toggleDetails = document.querySelectorAll(".toggle-details");
