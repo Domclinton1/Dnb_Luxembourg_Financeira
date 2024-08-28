@@ -1,24 +1,24 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
 
-    // Parâmetros do template de e-mail
-    const templateParams = {
-        nome: document.getElementById('nome').value,
-        email: document.getElementById('email').value,
-        celular: document.getElementById('celular').value,
-        valor: document.getElementById('valor').value,
-        mensagem: document.getElementById('mensagem').value
-    };
 
-    // Envia o e-mail usando EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-    .then(function(response) {
-        console.log('E-mail enviado com sucesso!', response.status, response.text);
-        alert('Mensagem enviada com sucesso!');
-    }, function(error) {
-        console.log('Falha ao enviar o e-mail.', error);
-        alert('Falha ao enviar a mensagem.');
-    });
+
+var data = {
+    service_id: 'service_t23mm03',
+    template_id: 'template_a9xxzyi',
+    user_id: 'mJ6RZhZbDRbLMsnSj',
+    template_params: {
+        'username': 'James',
+        'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+    }
+};
+ 
+$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+    type: 'POST',
+    data: JSON.stringify(data),
+    contentType: 'application/json'
+}).done(function() {
+    alert('Email Enviado com Sucesso!');
+}).fail(function(error) {
+    alert('Oops... ' + JSON.stringify(error));
 });
 
 

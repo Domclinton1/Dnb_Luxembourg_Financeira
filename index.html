@@ -16,10 +16,12 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("YOUR_USER_ID"); // Substitua "YOUR_USER_ID" pelo seu User ID do EmailJS
+            emailjs.init("mJ6RZhZbDRbLMsnSj"); // Substitua "YOUR_USER_ID" pelo seu User ID do EmailJS
         })();
     </script>
-   
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -65,7 +67,6 @@
                 <div class="hero-form">
                         
                     <form class="formm" id="contact-form">
-                        <h2>Insira os seus dados:</h2>
                         <label for="nome">Nome:</label><br>
                         <input type="text" id="nome" name="nome" required><br><br>
                         
@@ -76,7 +77,7 @@
                         <input type="tel" id="celular" name="celular" required><br><br>
                     
                         <label for="valor">Valor:</label><br>
-                        <input type="value" name="valor" id="valor" required><br><br>
+                        <input type="text" name="valor" id="valor" required><br><br>
                         
                         <label for="mensagem">Mensagem:</label><br>
                         <textarea id="mensagem" name="mensagem" required></textarea><br><br>
