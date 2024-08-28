@@ -4,16 +4,21 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    });
+    try {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
 
-    const result = await response.json();
-    alert(result.message);
+        const result = await response.json();
+        alert(result.message);
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Falha ao enviar a mensagem.');
+    }
 });
 /*
 var data = {
