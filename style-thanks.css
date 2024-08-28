@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/banners/Luxembourg-2jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.obrigado {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(219, 217, 217);
+    justify-content: center;   
+}
+.obrigado h1 {
+    color: #fd7e14;
+}
+.obrigado h2 {
+    color:  rgb(9, 9, 75);
+}
+.obrigado p {
+    color:  rgb(9, 9, 75);
+}
+.obrigado a {
+    text-decoration: none;
+    color:  #fff;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    border-radius: 7px;
+    background-color: #fd7e14;
+    width: 100%;
+    padding: 5px;
+}
+.obrigado a:hover {
+    color: gold;
+}
