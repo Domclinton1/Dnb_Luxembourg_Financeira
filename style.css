@@ -53,6 +53,13 @@ body {
     align-items: center;
     margin-top: 70px;
 }
+
+.nav .ul-2 {
+    width: 100%;
+}
+.nav .ul-2 li {
+    width: 100%;
+}
 .nav .ul-2 li:last-child {
     color: #fff;
     display: flex;
@@ -179,10 +186,9 @@ form {
     margin: 15px auto;
 }
 form input {
-    border-radius: 7px;
-    
-    
+    border-radius: 7px;    
 }
+
 form :not(h2, .simule-ja) {
     text-align: justify;
 }
@@ -207,8 +213,15 @@ form :not(h2, .simule-ja) {
 .formm {
     padding: 30px;
     border-radius: 15px;
-    
-
+}
+.formm input {
+    height: 40px;
+    padding: 5px;
+}
+.formm textarea {
+    resize: vertical;
+    padding: 5px;
+    border-radius: 7px;
 }
 .hero-form {
     justify-content: center;

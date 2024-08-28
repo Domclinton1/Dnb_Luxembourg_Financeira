@@ -1,3 +1,4 @@
+/*
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -20,6 +21,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         alert('Falha ao enviar a mensagem.');
     }
 });
+*/
 /*
 var data = {
     service_id: 'service_t23mm03',
