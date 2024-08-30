@@ -43,45 +43,45 @@
 </head>
 <body>
     <header>
-        <div class="hello"><span>Faça Uma Simulação Hoje Mesmo!</span></div>
+        <div class="hello"><span>Faça Uma Simulação do Seu Crédito Pessoal ou Empresarial Hoje Mesmo!</span></div>
         <div class="headder">
             
-            <div class="logo">
-                <img src="./assets/icons/logo.png" alt="Logo Crédito Financeira">
+            <div class="logo" data-target="inicio" >
+                <img  src="./assets/icons/logo.png" alt="Logo Crédito Financeira">
             </div>
             <div class="nav">
                 <ul class="ul-1">
-                    <li>Crédito Rápido</li>
-                    <li>Empréstimos</li>
-                    <li>Informações</li>
+                    <li data-target="creditoRapido">Crédito Rápido</li>
+                    <li data-target="emprestimos">Empréstimos</li>
+                    <li data-target="informations">Informações</li>
                     
                 </ul>
                 <ul class="ul-2">
                     <li id="faleConosco">
-                        <span>📞 Fale Conosco</span>
+                        Fale Conosco
                         <ul id="contatoOpcoes" style="display:none;">
                             <li>
                                 <a href="tel:+553135828296">
-                                    <span>📞</span> +55 31 3582-8296 <br>
+                                    <img src="./assets/icons/telephone.svg" alt=""> +55 31 3582-8296 <br>
                                     <small>Chamada</small>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://wa.me/5531987250745">
-                                    <span>📱</span>+55 31 98752-0745<br>
+                                    <img src="./assets/icons/whatsapp-2.svg" alt="">+55 31 98752-0745<br>
                                     <small>WhatsApp</small>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="simule-ja">Faça Uma Simulação</li>
+                    <li class="simule-ja modalSimulator">Faça Uma Simulação</li>
                 </ul>
             </div>
         </div>
         
     </header>
     <main>
-        <section class="heros">
+        <section class="heros" id="inicio">
             <div class="hero">
                 <div class="hero-text">
                     <h1>Crédito Pessoal e Empresas Online</h1>
@@ -147,7 +147,7 @@
                     Utilize nosso simulador de crédito online e deixe o restante com nossa equipe. Nós cuidamos de todo o processo para você.
                 </p>
                 
-                <div class="simule-ja simule-ja-2">Simular Já</div>
+                <div class="simule-ja modalSimulator">Simular Já</div>
             </div>
             <div class="bancos-simulador">
                 <img src="./assets/images/euro-casal.svg" alt="">
@@ -194,7 +194,7 @@
                         </li>
                     </ul>
                     <div class="bank-price-action">
-                        <div class="bank-action simule-ja">Simular Já</div>
+                        <div class="bank-action simule-ja modalSimulator">Simular Já</div>
                         <p>Comparamos ofertas de várias entidades.</p>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="creditoRapido">
             <div class="questions">
                 <h1>Porque Deve Escolher o DNB?</h1>
                 <div class="quests">
@@ -339,12 +339,12 @@
 
                         </div>
                     </div>  
-                    <div class="simule-ja simule-ja-2">SIMULAR JÁ</div> 
+                    <div class="simule-ja simule-ja-2 modalSimulator">SIMULAR JÁ</div> 
                 </div> 
             </div>
             
         </section>
-        <section class="emprestimos">
+        <section class="emprestimos" id="emprestimos">
             <div class="emprestimos-2">
                 <h3>CRÉDITO PESSOAL e EMPRESARIAL</h3>
                 <h2 class="sim-cred-h2">Tipos de Empréstimo Pessoal e Empresarial</h2>
@@ -356,7 +356,7 @@
                                 Vai comprar um carro ou uma moto? Já considerou um modelo elétrico? Seja novo ou usado, podemos ajudar você a economizar na prestação e tornar a compra mais acessível.
                             </p>
                             
-                        <span>Saiba Mais</span>
+                        <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/001-car-1.svg" alt="">
@@ -369,7 +369,7 @@
                                 Um <strong>crédito para obras</strong> permite iniciar seu projeto de renovação ou construção com mais rapidez, mesmo que você não tenha todo o capital disponível no momento.
                             </p>
                             
-                        <span>Saiba Mais</span>
+                        <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/006-crane.svg" alt="">
@@ -382,7 +382,7 @@
                                 Está pensando em cursar uma licenciatura ou um curso profissional? Com um <strong>crédito estudantil</strong>, você pode investir na sua formação com confiança e sem hesitações.
                             </p>
                             
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/icone-credito-estudante.svg" alt="">
@@ -395,7 +395,7 @@
                                 Está planejando o casamento dos seus sonhos e prefere não tocar nas suas economias? Um <strong>crédito pessoal</strong> pode ser a solução ideal para tornar seu grande dia realidade sem comprometer suas poupanças.
                             </p>
                             
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/credito-para-casamento-icone.svg" alt="">
@@ -408,7 +408,7 @@
                                 Vai tirar umas férias e prefere não usar suas economias? Este <strong>crédito pessoal</strong> pode ser a solução ideal para financiar sua viagem e atender a outras necessidades, sem comprometer suas poupanças.
                             </p>
                             
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/004-beach.svg" alt="">
@@ -421,7 +421,7 @@
                                 Precisa de um crédito online de forma imediata? Explore nossas soluções de <strong>crédito pessoal rápido</strong>, simule suas opções e obtenha a melhor proposta de financiamento com agilidade.
                             </p>
                             
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/icone-credito-rapido.png.webp" alt="">
@@ -434,7 +434,7 @@
                                 Seja para adquirir um único eletrodoméstico ou para renovar completamente um ambiente, esta é a solução ideal para atender às suas necessidades.
                             </p>
                             
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/003-iron.svg" alt="">
@@ -447,7 +447,7 @@
                                 Seja para a sala, o quarto, o jardim ou qualquer outro ambiente da sua casa, um <strong>crédito para mobiliário e decoração</strong> pode ser a solução perfeita para transformar seu lar de acordo com seu estilo e necessidades.
                             </p>
 
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/002-sofa.svg" alt="">
@@ -459,7 +459,7 @@
                             <p>
                                 Está buscando um empréstimo para uma cirurgia plástica ou para cobrir consultas médicas? Descubra nossas soluções de crédito dedicadas à saúde e escolha a opção que melhor atende às suas necessidades.
                             </p>
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/icone_credito_saude.svg" alt="">
@@ -471,7 +471,7 @@
                             <p>
                                 Um crédito pessoal pode ser utilizado para diversas finalidades, e você não precisa especificá-las. Um <strong>crédito sem finalidade específica</strong> é a solução ideal para quem busca flexibilidade e privacidade na utilização dos recursos.
                             </p>                            
-                            <span>Saiba Mais</span>
+                            <span class="saibaMais">Saiba Mais</span>
                         </div>
                         <div class="emprestimos-img">
                             <img src="./assets/icons/005-packaging.svg" alt="">
@@ -482,7 +482,7 @@
             </div>
 
         </section>
-        <section class="security">
+        <section class="security" id="informations">
             <div class="security-2">
                 <div class="security-01">
                     <h1>É Seguro Solicitar Empréstimo Pessoal e Empresarial Online?</h1>
@@ -544,7 +544,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="simule-ja">
+            <div class="simule-ja modalSimulator">
                 Simular Já
             </div>  
         </section>
@@ -597,7 +597,7 @@
                 </div>
                 
             </div>
-            <div class="simule-ja">SIMULAR JÁ</div>
+            <div class="simule-ja modalSimulator">SIMULAR JÁ</div>
         </section> 
         <div class="security security-geral">
             <div class="security-2">
@@ -631,7 +631,7 @@
                     <img src="./assets/images/economize.svg" alt="">
                 </div>
             </div>
-            <div class="simule-ja">SIMULAR JÁ</div>
+            <div class="simule-ja modalSimulator">SIMULAR JÁ</div>
         </div>
         <section id="testimonials">
         
@@ -746,6 +746,40 @@
         </div>
         
     </footer>
+    <a href="https://wa.me/5531994038782?text=Ola,%20quero%20realizar%20uma%20simulação%20de crédito pessoal e empresarial..." class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="assets/icons/whatssapp.svg" alt="Botão whatsapp">
+        <span class="tooltip-text">Fazer contato.</span>
+    </a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Formulário Dentro do Modal -->
+            <form action="./php/enviar_email.php" method="POST" class="formm" id="contact-form">
+                <h2>Faça uma Simulação</h2>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+                <label for="celular">Telemóvel:</label><br>
+                <input type="tel" id="celular" name="celular" placeholder="Digite seu telemóvel" required><br><br>
+
+                <label for="valor">Valor:</label><br>
+                <input type="text" placeholder="Insira o valor desejado" id="valor" name="valor" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea><br><br>
+
+                <input class="simule-ja" type="submit" value="Enviar">
+
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://dnbluxembourgsa.vercel.app/thanks.html">
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
     
 </body>

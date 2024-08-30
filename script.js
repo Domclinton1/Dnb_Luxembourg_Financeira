@@ -1,49 +1,80 @@
-/*
-document.getElementById('contact-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
+// Seleciona o modal e o botão de fechar
+var modal = document.getElementById("myModal");
+var span = document.querySelector(".close");
 
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries());
+// Seleciona todos os botões com a classe .modalSimulator
+var buttons = document.querySelectorAll(".modalSimulator");
 
-    try {
-        const response = await fetch('/api/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-
-        const result = await response.json();
-        alert(result.message);
-    } catch (error) {
-        console.error('Erro:', error);
-        alert('Falha ao enviar a mensagem.');
-    }
-});
-*/
-/*
-var data = {
-    service_id: 'service_t23mm03',
-    template_id: 'template_a9xxzyi',
-    user_id: 'mJ6RZhZbDRbLMsnSj',
-    template_params: {
-        'username': 'James',
-        'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
-    }
-};
- 
-$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-    type: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json'
-}).done(function() {
-    alert('Email Enviado com Sucesso!');
-}).fail(function(error) {
-    alert('Oops... ' + JSON.stringify(error));
+// Adiciona um evento de clique para cada botão com a classe .modalSimulator
+buttons.forEach(function(button) {
+    button.onclick = function() {
+        modal.style.display = "block";
+    };
 });
 
-*/ 
+// Quando o usuário clicar no "X" (span), o modal será fechado
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Quando o usuário clicar fora do modal, ele será fechado
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+// Seleciona todos os elementos com a classe .ler-mais
+var lerMaisElements = document.querySelectorAll(".saibaMais");
+
+// Define o número de telefone e a mensagem para o WhatsApp
+var telefone = "5581999999999"; // Substitua pelo número desejado
+var mensagem = "Olá, gostaria de saber mais informações."; // Mensagem padrão
+
+// Adiciona um evento de clique para cada elemento com a classe .ler-mais
+lerMaisElements.forEach(function(element) {
+    element.onclick = function() {
+        var url = "https://wa.me/" + telefone + "?text=" + encodeURIComponent(mensagem);
+        window.open(url, '_blank'); // Abre em uma nova aba
+    }
+});
+
+
+// Seleciona todos os itens da lista com a classe .nav-item
+var navItems = document.querySelectorAll("ul li");
+
+// Adiciona um evento de clique para cada item da lista
+navItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+        // Obtém o valor do atributo data-target
+        var targetId = this.getAttribute("data-target");
+        
+        // Seleciona o elemento com o id correspondente
+        var targetElement = document.getElementById(targetId);
+        
+        // Verifica se o elemento existe
+        if (targetElement) {
+            // Rola até o elemento alvo
+            targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
+
+
+
+window.addEventListener("scroll", function() {
+    const heroSection = document.querySelector(".hero");
+    const whatsappButton = document.querySelector(".btn-whatsapp");
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+    if (window.scrollY > heroBottom) {
+        whatsappButton.style.display = "block";
+    } else {
+        whatsappButton.style.display = "none";
+    }
+});
+
 
 document.getElementById("faleConosco").addEventListener("click", function() {
     var contatoOpcoes = document.getElementById("contatoOpcoes");
