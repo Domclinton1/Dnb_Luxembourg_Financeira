@@ -13,16 +13,17 @@ body {
 /*Header Inicio*/
 .logo img {
     width: 100%;
+    cursor: pointer;
 }
 
 .headder {
-   
+    width: 100%;
     display: flex;
     background-color: #fff;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 10px 0 10px;
 }
 .hello {
     display: flex;
@@ -36,8 +37,8 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    gap: 25rem;
-    
+    gap: 10rem;
+    width: 100%;
 }
 .nav ul li {
     cursor: pointer;
@@ -52,11 +53,28 @@ body {
     gap: 1.8rem;
     text-align: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
+    width: 100%;
+}
+.nav .ul-1 li {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .ul-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .nav .ul-2 {
-    width: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 .nav .ul-2 li {
     width: 100%;
