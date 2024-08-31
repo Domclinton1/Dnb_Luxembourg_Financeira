@@ -12,6 +12,7 @@ body {
     background-image: url(./assets/banners/Luxembourg-2jpg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .obrigado {
     width: 50%;
@@ -21,7 +22,8 @@ body {
     padding: 40px;
     border-radius: 10px;
     background-color: rgb(219, 217, 217);
-    justify-content: center;   
+    justify-content: center;
+    align-items: center;
 }
 .obrigado h1 {
     color: #fd7e14;
@@ -44,4 +46,13 @@ body {
 }
 .obrigado a:hover {
     color: gold;
+}
+@media screen and (max-width: 768px) {
+    .obrigado {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }

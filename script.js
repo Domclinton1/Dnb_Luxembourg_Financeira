@@ -29,8 +29,8 @@ window.onclick = function(event) {
 var lerMaisElements = document.querySelectorAll(".saibaMais");
 
 // Define o número de telefone e a mensagem para o WhatsApp
-var telefone = "5581999999999"; // Substitua pelo número desejado
-var mensagem = "Olá, gostaria de saber mais informações."; // Mensagem padrão
+var telefone = "553135828296"; // Substitua pelo número desejado
+var mensagem = "Olá, gostaria de simular um empréstimo de..."; // Mensagem padrão
 
 // Adiciona um evento de clique para cada elemento com a classe .ler-mais
 lerMaisElements.forEach(function(element) {

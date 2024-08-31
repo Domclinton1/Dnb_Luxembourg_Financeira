@@ -17,7 +17,7 @@
       Mensagem: $mensagem
       _______________________________________________
 
-      
+
       Este e-mail foi enviado em $data_envio às $hora_envio
   ";
   
@@ -28,7 +28,8 @@
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
   $headers  = "MIME-Version: 1.0\n";
   $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-  $headers .= "From: $nome <$email>";
+  $headers .= "From: \"$nome\" <$email>";
+
 
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
