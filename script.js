@@ -63,6 +63,7 @@ navItems.forEach(function(item) {
 
 
 
+
 window.addEventListener("scroll", function() {
     const heroSection = document.querySelector(".hero");
     const whatsappButton = document.querySelector(".btn-whatsapp");
