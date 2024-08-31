@@ -22,7 +22,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "domlinksolucoesdigitais@gmail.com";
+  $destino = "dnbluxembourgsa@gmail.com";
   $assunto = "Contato pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
