@@ -100,31 +100,27 @@
                 </div>
                 <div class="hero-form">
                         
-                    <form action="./php/enviar_email.php" method="POST" class="formm" id="contact-form">
+                    <form action="./php/enviar_email.php" method="POST" class="formm modal-content" id="contact-form">
                         <h2>Faça uma Simulação</h2>
+                    
                         <label for="nome">Nome:</label><br>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
-                        
+                    
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
-                        
+                    
                         <label for="celular">Telemóvel:</label><br>
                         <input type="tel" id="celular" name="celular" placeholder="Digite seu telemóvel" required><br><br>
                     
                         <label for="valor">Valor:</label><br>
                         <input type="text" placeholder="Insira o valor desejado" id="valor" name="valor" required><br><br>
-                        
-
-
+                    
                         <label for="mensagem">Mensagem:</label><br>
                         <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea><br><br>
                     
                         <input class="simule-ja" type="submit" value="Enviar">
-
-                        <input type="hidden" name="_subject" value="Novo Contato!">
-                        <input type="text" name="_honey" style="display: none;">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://gk0.e60.mytemp.website/thanks.html">
+                    </form>
+                    
                     </form>
                     
                 </div>
@@ -760,28 +756,25 @@
             <form action="./php/enviar_email.php" method="POST" class="formm modal-content" id="contact-form">
                 <span class="close">&times;</span>
                 <h2>Faça uma Simulação</h2>
+            
                 <label for="nome">Nome:</label><br>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
-
+            
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
-
+            
                 <label for="celular">Telemóvel:</label><br>
                 <input type="tel" id="celular" name="celular" placeholder="Digite seu telemóvel" required><br><br>
-
+            
                 <label for="valor">Valor:</label><br>
                 <input type="text" placeholder="Insira o valor desejado" id="valor" name="valor" required><br><br>
-
+            
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea><br><br>
-
+            
                 <input class="simule-ja" type="submit" value="Enviar">
-
-                <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://gk0.e60.mytemp.website/thanks.html">
             </form>
+            
         
     </div>
     <script src="script.js"></script>

@@ -1,38 +1,47 @@
 <?php
-  //Variáveis
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $mensagem = $_POST['mensagem'];
+  // Sanitizar as entradas para evitar injeção de cabeçalho
+  function sanitize_input($data) {
+      return htmlspecialchars(stripslashes(trim($data)));
+  }
+
+  // Variáveis
+  $nome = sanitize_input($_POST['nome']);
+  $email = sanitize_input($_POST['email']);
+  $celular = sanitize_input($_POST['celular']);
+  $mensagem = sanitize_input($_POST['mensagem']);
+  $valor = sanitize_input($_POST['valor']);
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
-  //Compo E-mail
+  // Composição do E-mail
   $arquivo = "
-      Nome: $nome
-      _______________________________________________
-      E-mail: $email
-      _______________________________________________
+      <html>
+      <body>
+          <p><strong>Nome:</strong> $nome</p>
+          <p><strong>E-mail:</strong> $email</p>
+          <p><strong>Telemóvel:</strong> $celular</p>
+          <p><strong>Valor desejado:</strong> $valor</p>
+          <p><strong>Mensagem:</strong> $mensagem</p>
 
-      _______________________________________________
-      Mensagem: $mensagem
-      _______________________________________________
-
-
-      Este e-mail foi enviado em $data_envio às $hora_envio
+          <hr>
+          <p>Este e-mail foi enviado em <strong>$data_envio</strong> às <strong>$hora_envio</strong></p>
+      </body>
+      </html>
   ";
-  
-  //Emails para quem será enviado o formulário
-  $destino = "dnbluxembourgsa@gmail.com";
+
+  // E-mails para quem será enviado o formulário
+  $destino = "info@dnbluxemburg.com";
   $assunto = "Contato pelo Site";
 
-  //Este sempre deverá existir para garantir a exibição correta dos caracteres
-  $headers  = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-  $headers .= "From: \"$nome\" <$email>";
+  // Cabeçalhos de e-mail
+  $headers  = "MIME-Version: 1.0\r\n";
+  $headers .= "Content-type: text/html; charset=utf-8\r\n";
+  $headers .= "From: \"$nome\" <$email>\r\n";
+  $headers .= "Reply-To: $email\r\n";
 
-
-  //Enviar
+  // Enviar
   mail($destino, $assunto, $arquivo, $headers);
-  
-  echo "<meta http-equiv='refresh' content='10;URL=../thanks.html'>";
+
+  // Redirecionar para a página de agradecimento
+  echo "<meta http-equiv='refresh' content='10;URL=https://dnbluxemburg.com/thanks.html'>";
 ?>
