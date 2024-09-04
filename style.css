@@ -982,6 +982,7 @@ form :not(h2, .simule-ja) {
 .rate {
     display: flex;
     justify-content: flex-end;
+    display: none;
 }
 .bank-price-action {
     display: flex;
