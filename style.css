@@ -1391,8 +1391,8 @@ footer {
       }
     }
     .btn-whatsapp img {
-        width: 100%;
-        max-width: 64px;
+        
+        max-width: 74px;
     }
 
 /* End media queries max-width 430px*/
@@ -1400,7 +1400,10 @@ footer {
 /* Begin of media queries min width 430px and max-width 768px */
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
-
+    .btn-whatsapp img {
+    
+        max-width: 84px;
+    }
     .heros {
         display: flex;
         flex-direction: column;
