@@ -57,6 +57,7 @@ body {
     right: 0;
     z-index: 99;
     display: none;
+    
 }
 
 .btn-whatsapp  img{
@@ -1390,7 +1391,8 @@ footer {
       }
     }
     .btn-whatsapp img {
-        width: 40px;
+        width: 100%;
+        max-width: 64px;
     }
 
 /* End media queries max-width 430px*/
